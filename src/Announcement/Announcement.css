@@ -1,0 +1,8 @@
+.announcement {
+	border-radius:5px;
+	background-color: #cccccc;
+	text-align:center;
+	padding:25px;
+	display:block;
+	margin-top:15px;
+}

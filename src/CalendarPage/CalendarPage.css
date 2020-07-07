@@ -1,0 +1,51 @@
+.calendar-page {
+        width:100%;
+}
+
+h4 {
+        font-size:24px;
+}
+
+.calendar-title {
+        padding:10px;
+        background-color:#cccccc;
+        width:100%;
+        font-size:20px;
+        font-weight:bold;
+}
+
+.calendar-day {
+	display:flex;
+	justify-content:flex-start;
+	margin-bottom:3px;
+}
+
+.calendar-day-string {
+	text-align:center;
+	margin-right:10px;
+	background-color:#999999;
+	min-width:50px;
+	padding:5px;
+}
+
+.calendar-details {
+	padding:5px;
+}
+
+blockquote {
+	padding-top:0px;
+	margin-top:5px;
+}
+
+.calendar-event {
+}
+
+.calendar-nav {
+	display:flex;
+	width:100%;
+	justify-content:flex-end;
+}
+
+.next-month {
+	align-self: flex-end;
+}

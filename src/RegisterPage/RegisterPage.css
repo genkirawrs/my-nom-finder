@@ -1,0 +1,11 @@
+h4 {
+        font-size:24px;
+}
+
+.email, .password {
+        margin-bottom:5px;
+}
+
+input {
+        margin-left:5px;
+}

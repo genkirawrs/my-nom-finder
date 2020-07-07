@@ -1,0 +1,20 @@
+h4 {
+	font-size:24px;
+}
+
+.user_name, .password {
+	margin-bottom:5px;
+}
+
+input {
+	margin-left:5px;
+}
+
+.new-account-link {
+	font-size:13px;
+	margin-top:10px;
+}
+
+.login-page a, .login-page a:focus, .login-page a:active, .login-page a:visited {
+	text-decoration:underline !important;
+}

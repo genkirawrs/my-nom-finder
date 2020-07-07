@@ -1,0 +1,15 @@
+h4 {
+        font-size:24px;
+}
+
+.name, .email, .subject{
+        margin-bottom:5px;
+}
+
+input,textarea {
+        margin-left:5px;
+}
+
+label {
+	vertical-align:top;
+}

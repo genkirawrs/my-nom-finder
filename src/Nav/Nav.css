@@ -1,0 +1,31 @@
+.Nav {
+    
+}
+
+nav {
+    margin-right:10px;
+    background-color:#e7e7e7;
+    padding: 20px;
+}
+
+nav ul {
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+nav ul li a {
+    text-align:center;
+    width:100%;
+    display:inline-block;
+    margin-bottom:10px;
+    padding:10px;
+}
+
+nav ul li a.selected {
+    border-bottom:2px solid black;
+}
+
+nav ul li.selected a {
+    background-color: #a3d5ff;
+}

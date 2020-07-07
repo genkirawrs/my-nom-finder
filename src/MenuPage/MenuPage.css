@@ -1,0 +1,28 @@
+.menu-page {
+	width:100%;
+}
+
+h4 {
+	font-size:24px;
+}
+
+.menu-title {
+	padding:10px;
+	background-color:#cccccc;
+	width:100%;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.menu-page ul {
+	width:100%;
+	margin-bottom:20px;
+}
+
+.menu-page ul li.menu-title {
+	margin-bottom:10px;
+}
+
+.menu-page ul li.menu-item{
+	margin-left:25px;
+}

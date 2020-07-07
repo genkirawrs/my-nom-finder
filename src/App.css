@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    max-width:800px;
+    margin:auto;
+}
+
+.App a, .App a:visited, .App a:focus, .App a:active {
+    text-decoration:none;
+    color: black;
+}
+
+.App a:hover {
+    color:#666666;
+    text-decoration:none;
+}
+
+main {
+    display:flex;
+    margin-bottom:25px;
+}
+
+section {
+    padding:20px;
+    width:75%;
+    background-color:#f7f7f7;
+}
+
+ul {
+    list-style:none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
