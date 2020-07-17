@@ -69,7 +69,6 @@ class MenuPage extends Component {
 
   renderMenu(){
     const menu = this.state.menu
-    const menu_categories = ['Sweet', 'Savory', 'Sides','Beverages']
     const menu_order = [2,1,3,4]
 
     if(menu.length > 0){
@@ -97,7 +96,7 @@ class MenuPage extends Component {
                     })
 		
 	    return(
-		<ul>
+		<ul key={category}>
                 <li className="menu-title" key={menu_list.name}>{menu_list.name}</li>
 		{formatted_section}
 		</ul>
