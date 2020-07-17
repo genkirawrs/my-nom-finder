@@ -7,7 +7,7 @@ export default class Header extends Component {
   render() {
     return (
         <header>
-          <Link to='/'><h1>My Nom Finder</h1></Link>
+          <Link to='/'><h1>Nom Finder</h1></Link>
         </header>
     )
   }
