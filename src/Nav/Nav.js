@@ -27,11 +27,6 @@ export default function Nav(props) {
             Contact
           </Link>
 	</li>
-	<li>
-          <Link to={'/login'}>
-            Sign In
-          </Link>
-	</li>
       </ul>
     </nav>
   );
