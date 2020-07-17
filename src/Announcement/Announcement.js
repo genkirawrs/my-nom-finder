@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Announcement.css';
 
@@ -12,7 +13,7 @@ class Announcement extends Component {
 		My Nom Finder helps you keep up with your mobile restaurant's comings and goings. No more playing hide and seek with your grub!
 	    </blockquote>
 	    <br/>
-	    <a>Enough talk, find my nom!</a>
+	    <Link to='/calendar'>Enough talk, find my nom!</Link>
 	</div>
     );
   }
