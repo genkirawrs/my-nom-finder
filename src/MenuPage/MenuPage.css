@@ -6,12 +6,18 @@ h4 {
 	font-size:24px;
 }
 
+.menu-page section {
+	width:100%;
+	padding:0px;
+}
+
 .menu-title {
 	padding:10px;
-	background-color:#cccccc;
+	background-color:#66A221;
 	width:100%;
 	font-size:20px;
 	font-weight:bold;
+	margin-bottom:15px;
 }
 
 .menu-page ul {
@@ -19,15 +25,62 @@ h4 {
 	margin-bottom:20px;
 	display:flex;
 	flex-wrap:wrap;
-}
-
-.menu-page ul li.menu-title {
-	margin-bottom:10px;
-	width:100%;
-	flex-basis: 100%;
-	display:block;
+	padding:10px;
+	justify-content: flex-start;
 }
 
 .menu-page ul li.menu-item{
-	margin-left:25px;
+	width:100%;
+	margin-block-start: 0em;
+	margin-block-end:0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	border:2px solid #fcba04;
+	border-radius:5px;
+	margin:10px;
+	padding:10px;
+	flex: 1 1 auto;
+}
+
+.menu-page ul li.menu-item blockquote{
+        margin-block-start: 0em;
+        margin-block-end:0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+	margin-top:5px;
+}
+
+@media screen and (min-width:360px){
+    .menu-page ul li.menu-item{
+        width:100%;
+        margin-block-start: 0em;
+        margin-block-end:0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        border:2px solid #fcba04;
+        border-radius:5px;
+        margin:10px;
+        padding:10px;
+    }
+}
+
+@media screen and (min-width:750px){
+    .menu-page ul li.menu-item{
+        width:46%;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    .menu-page ul li.menu-item{
+        width:30%;
+        margin-block-start: 0em;
+        margin-block-end:0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        border:2px solid #fcba04;
+        border-radius:5px;
+        margin:10px;
+        padding:10px;
+    }
 }

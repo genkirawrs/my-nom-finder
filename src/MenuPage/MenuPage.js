@@ -96,10 +96,12 @@ class MenuPage extends Component {
                     })
 		
 	    return(
+		<section>
+		<div className='menu-title'>{menu_list.name}</div>
 		<ul key={category}>
-                <li className="menu-title" key={menu_list.name}>{menu_list.name}</li>
 		{formatted_section}
 		</ul>
+		</section>
 	    )
 	})
       return test
