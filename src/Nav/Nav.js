@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Nav.css';
 
 class Nav extends Component {
-  state = {currentPage: 'home'}
+  state = {currentPage: this.props.pathname}
 
   render(){
     return (
