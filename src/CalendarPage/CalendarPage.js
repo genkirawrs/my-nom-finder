@@ -109,9 +109,18 @@ class CalendarPage extends Component {
                             </div>);
                         })
 
+			let day_ordinal = 'th'
+			if( day == 1 ){
+			    day_ordinal = 'st'
+			}else if( day == 2 ){
+			    day_ordinal = 'nd'
+			}else if( day == 3 ){
+			    day_ordinal = 'rd'
+			}
+
                         return ( 
                             <div className='calendar-day' key={day}>
-                                <div className='calendar-day-string'>{weekday}<br/>{day}</div>
+                                <div className='calendar-day-string'>{weekday} {day}<span id='day_ordinal'>{day_ordinal}</span></div>
                                 <div className='calendar-details'>{event_list}</div>
                             </div>
                         )
