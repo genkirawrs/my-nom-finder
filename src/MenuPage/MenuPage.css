@@ -17,10 +17,15 @@ h4 {
 .menu-page ul {
 	width:100%;
 	margin-bottom:20px;
+	display:flex;
+	flex-wrap:wrap;
 }
 
 .menu-page ul li.menu-title {
 	margin-bottom:10px;
+	width:100%;
+	flex-basis: 100%;
+	display:block;
 }
 
 .menu-page ul li.menu-item{

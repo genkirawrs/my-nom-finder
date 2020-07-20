@@ -2,8 +2,19 @@ footer {
 	margin-top:15px;
 	background-color:#cccccc;
 	font-size:11px;
-	padding:5px;
+	padding:10px;
 	bottom:0px;
 	width:100%;
 	max-width:800px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer div {
+
+}
+
+.svg-inline--fa {
+	margin-right:7px;
 }

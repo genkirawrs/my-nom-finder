@@ -82,9 +82,6 @@ class CalendarPage extends Component {
 
         return (
             <div className="calendar-month">
-                <div className="calendar-nav">
-                    <div className="next-month"></div>
-                </div>
                 <h4>July</h4>
                 {events_by_day.map((event_day) => {
                         let scheduled = event_day.day_ts
