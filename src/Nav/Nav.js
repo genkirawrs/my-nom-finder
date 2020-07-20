@@ -7,7 +7,6 @@ class Nav extends Component {
   state = {currentPage: 'home'}
 
   render(){
-console.log(this.state.currentPage)
     return (
       <nav className='Nav'>
         <ul>

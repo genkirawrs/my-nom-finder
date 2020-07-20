@@ -34,11 +34,11 @@ class ContactPage extends Component {
 
     return(
         <div className="contact-page">
-            <h4>Drop Us a Line</h4>
+            <h4>Drop Us a Line!</h4>
         <form className='ContactForm' method='post' action='https://formspree.io/xjvapjpd' onSubmit={this.submitForm}>
-        <div className='name'>
+        <div className='form-section name'>
           <label htmlFor='RegistrationForm_name'>
-            Name
+            Name*
           </label>
           <input
             name='name'
@@ -46,9 +46,9 @@ class ContactPage extends Component {
             required
             id='RegistrationForm_name'/>
         </div>
-        <div className='email'>
+        <div className='form-section email'>
           <label htmlFor='RegistrationForm_email'>
-            Email
+            Email*
           </label>
           <input
             name='email'
@@ -56,9 +56,9 @@ class ContactPage extends Component {
             required
             id='RegistrationForm_email'/>
         </div>
-        <div className='subject'>
+        <div className='form-section subject'>
           <label htmlFor='RegistrationForm_subject'>
-            Subject 
+            Subject*
           </label>
           <input
             name='subject'
@@ -66,9 +66,9 @@ class ContactPage extends Component {
             required
             id='RegistrationForm_subject'/>
         </div>
-        <div className='message'>
+        <div className='form-section message'>
           <label htmlFor='RegistrationForm_message'>
-            Message
+            Message*
           </label>
           <textarea
             name='message'
@@ -76,7 +76,7 @@ class ContactPage extends Component {
             id='RegistrationForm_message'>
 	  </textarea>
         </div>
-        {status === "SUCCESS" ? <p>Thanks! Your email has been sent, talk to you soon!</p> : <input type='submit' value='Send'/>}
+        {status === "SUCCESS" ? <p>Thanks! Your email has been sent, talk to you soon!</p> : <input type='submit' className='submit-button' value='Send!'/>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
         </div>

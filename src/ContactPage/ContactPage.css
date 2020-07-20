@@ -1,5 +1,15 @@
+.contact-page {
+	width:100%;
+}
+
 h4 {
         font-size:24px;
+}
+
+.form-section {
+	display:flex;
+	flex-direction: column;
+	padding-bottom:15px;
 }
 
 .name, .email, .subject{
@@ -8,8 +18,29 @@ h4 {
 
 input,textarea {
         margin-left:5px;
+	border:1px solid #66a221;
+	line-height:20px;
+	width:20rem;
+	border-radius:5px;
+}
+
+input {
+	height:35px;
+	font-size:18px;
+	padding:5px;
+}
+
+textarea {
+	height:75px;
+}
+
+.submit-button {
+	width:125px;
+	height:50px;
 }
 
 label {
 	vertical-align:top;
+	margin-left:5px;
+	padding-bottom:3px;
 }
