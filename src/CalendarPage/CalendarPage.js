@@ -12,6 +12,7 @@ class CalendarPage extends Component {
     error: null,
     userId: 1,
     favs: [],
+    display: 'full'
   };
 
   componentDidMount() {
@@ -73,6 +74,14 @@ class CalendarPage extends Component {
 
   clearError = () => {
     this.setState({ error: null })
+  }
+
+  changeDisplay = () => {
+	if(this.state.display === 'full'){
+	    this.setState({display:'mine'})
+	}else{
+	    this.setState({display:'full'})
+	}
   }
 
   addFav = (eventId) => {
@@ -172,21 +181,41 @@ class CalendarPage extends Component {
 
         return (
             <div className="calendar-month">
-                <h4>July</h4>
+		<div className="calendar-header">
+                  <h4>July</h4>
+			{this.state.display === 'mine'
+                  	?  <div className="calendar-filter"><button onClick={()=>this.changeDisplay()} className='filter-button'>View All Events</button></div>
+                        :  <div className="calendar-filter"><button onClick={()=>this.changeDisplay()} className='filter-button'>View My Favorite Events</button></div>
+                        }
+		</div>
                 {events_by_day.map((event_day) => {
                         let scheduled = event_day.day_ts
                         let day_num = scheduled.getDay()
                         let weekday = weekdays[day_num]
                         let day = scheduled.getDate()
-                        
-                        let event_list = event_day.events.map((event,i)=>{
+			let filter_events = []
+			if(this.state.display === 'mine'){
+		            event_day.events.forEach(event=>{
+				if( fav_by_id[event.id]){
+				    filter_events.push(event)
+				}
+        		    })
+			}else{
+			    filter_events = event_day.events
+			}
+
+                        let event_list = filter_events.map((event,i)=>{
+	                   if(this.state.display === 'mine' && !fav_by_id[event.id]){
+        	                return "";
+                	   }
+
                             let list_id = day+"_"+i //unique id
 			    //formatting start and end time strings
 			    let start_time = event.start_date.split('T')[1]
                                 let start_str = this.formatTime(start_time)
 			    let end_time = event.end_date.split('T')[1]
 			        let end_str = this.formatTime(end_time)
-	    		let fav_str = 0
+	    	  	    let fav_str = 0
 			    if(has_favs && fav_by_id[event.id]){
 				fav_str = 1
 			    }
@@ -208,7 +237,7 @@ class CalendarPage extends Component {
                                 {fav_str ? <div className='fav-star fav-star-gold'><FontAwesomeIcon icon={faStar} className='fa-lg' title="fav'd" aria-hidden="true"/></div> : <div className='fav-star fav-star-grey'><FontAwesomeIcon icon={faStar} className='fa-lg' title="fav'd" aria-hidden="true"/></div>}
                             </div>);
                         })
-
+			
 			let day_ordinal = 'th'
 			if( day === 1 ){
 			    day_ordinal = 'st'
@@ -218,12 +247,16 @@ class CalendarPage extends Component {
 			    day_ordinal = 'rd'
 			}
 
-                        return ( 
+			if(event_list.length > 0){
+                          return ( 
                             <div className='calendar-day' key={day}>
                                 <div className='calendar-day-string'>{weekday} {day}<span id='day_ordinal'>{day_ordinal}</span></div>
                                 <div className='calendar-details'>{event_list}</div>
                             </div>
-                        )
+                          )
+			}else{
+			  return "";
+			}
                   })
                 }
 
