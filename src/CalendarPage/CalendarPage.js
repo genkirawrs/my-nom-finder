@@ -239,11 +239,11 @@ class CalendarPage extends Component {
                         })
 			
 			let day_ordinal = 'th'
-			if( day === 1 ){
+			if( day === 1 || day === 21 || day === 31){
 			    day_ordinal = 'st'
-			}else if( day === 2 ){
+			}else if( day === 2 || day === 22 ){
 			    day_ordinal = 'nd'
-			}else if( day === 3 ){
+			}else if( day === 3 || day === 23 ){
 			    day_ordinal = 'rd'
 			}
 
