@@ -10,7 +10,7 @@ class Announcement extends Component {
         <div className="announcement">
 	    <h4>Welcome to Nom Finder</h4>
 	    <blockquote>
-		Nom Finder helps you keep up with your mobile restaurant's comings and goings. No more playing hide and seek with your grub!
+		Nom Finder's goal is to help you keep up with your favorite mobile restaurants' comings and goings. No more playing hide and seek with your grub! 
 	    </blockquote>
 	    <br/>
 	    <Link to='/calendar'>Enough talk, find my nom!</Link>
