@@ -12,23 +12,23 @@ To eventually provide a directory of food trucks' menus and events in one easy t
 ## Screenshots
 Homepage:
 
-![Home Page](screenshots/nf_ss_home.png)
+![Home Page](src/screenshots/nf_ss_home.png)
 
 View Menu Items:
 
-![Menu Page](screenshots/nf_ss_menu.png)
+![Menu Page](src/screenshots/nf_ss_menu.png)
 
 Calendar, View all Events:
 
-![Full Recipe](screenshots/nf_ss_calendar_full.png)
+![Full Recipe](src/screenshots/nf_ss_calendar_full.png)
 
 Calendar, View My Favorite Events:
 
-![Recipe Randomizer](screenshots/nf_ss_calendar_mine.png)
+![Recipe Randomizer](src/screenshots/nf_ss_calendar_mine.png)
 
 Contact Page:
 
-![Print Recipe](screenshots/nf_ss_contact.png)
+![Print Recipe](src/screenshots/nf_ss_contact.png)
 
 
 ## Built With
