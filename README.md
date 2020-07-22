@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Summary
 
-## Available Scripts
+Title: Nom Finder
 
-In the project directory, you can run:
+Description: A light weight app that focuses on tracking and organizing one's favorite food truck events.
 
-### `npm start`
+## Purpose
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To eventually provide a directory of food trucks' menus and events in one easy to access location so anyone can create an account and track when their favorite truck will be in their area next.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
+Homepage:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Home Page](screenshots/nf_ss_home.png)
 
-### `npm run build`
+View Menu Items:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Menu Page](screenshots/nf_ss_menu.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Calendar, View all Events:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Full Recipe](screenshots/nf_ss_calendar_full.png)
 
-### `npm run eject`
+Calendar, View My Favorite Events:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Recipe Randomizer](screenshots/nf_ss_calendar_mine.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contact Page:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Print Recipe](screenshots/nf_ss_contact.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Built With
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* HTML5/CSS3
+* React/Node
+* Formspree
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
+* View Menu Options
+* View Food Truck Events & Details
+* Fav and Un-fav Events
+* View All Events or View Your Favorite Events
+* Contact Form
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Demo
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [Live Demo](https://my-nom-finder.vercel.app/)
