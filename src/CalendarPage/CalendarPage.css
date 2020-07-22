@@ -50,8 +50,10 @@ blockquote {
         border:2px solid #7798ab;
         border-radius:5px;
         margin-bottom:10px;
-        padding:10px;
+        padding:3px;
         flex: 1 1 auto;
+	display:flex;
+	justify-content:space-between
 }
 
 .calendar-details > div:nth-of-type(odd) {
@@ -77,6 +79,43 @@ blockquote {
 	align-self: flex-end;
 }
 
+.fav-star {
+	align-self: flex-start;
+}
+
+.fav-star-gold{
+	color:#fcba04;
+}
+
+.fav-star-grey {
+	color:#666666;
+}
+
+.event-detail-text {
+	padding:7px;
+}
+
+.fav-button {
+	margin-top:10px;
+}
+
+.fav-button button{
+	padding:5px;
+	width:150px;
+}
+
+.fav-button button.fav {
+	background-color:#fcba04;
+	border:1px solid black;
+	border-radius:3px;
+}
+
+.fav-button button.unfav{
+	background-color:#999999;
+        border:1px solid black;
+        border-radius:3px;
+}
+
 @media screen and (min-width:750px){
     .calendar-details {
         flex-direction:row;
@@ -84,8 +123,9 @@ blockquote {
     }
     .calendar-event{
         width:46%;
+	max-width:48%;
         margin:10px;
-        padding:10px;
+        padding:3px;
     }
 }
 
