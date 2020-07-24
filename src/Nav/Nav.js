@@ -1,7 +1,7 @@
-import React,{Component} from 'react';
-import { Link } from 'react-router-dom';
+import React,{Component} from 'react'
+import { Link } from 'react-router-dom'
 
-import './Nav.css';
+import './Nav.css'
 
 class Nav extends Component {
   state = {currentPage: this.props.pathname}
@@ -37,4 +37,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default Nav

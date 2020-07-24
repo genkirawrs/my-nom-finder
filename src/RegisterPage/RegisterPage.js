@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './RegisterPage.css';
+import './RegisterPage.css'
 
 class RegistrationPage extends Component {
 
@@ -37,4 +37,4 @@ class RegistrationPage extends Component {
 
 }
 
-export default RegistrationPage;
+export default RegistrationPage

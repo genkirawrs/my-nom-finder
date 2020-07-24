@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-import './Announcement.css';
+import './Announcement.css'
 
 class Announcement extends Component {
 
@@ -15,9 +15,9 @@ class Announcement extends Component {
 	    <br/>
 	    <Link to='/calendar'>Enough talk, find my nom!</Link>
 	</div>
-    );
+    )
   }
 
 }
 
-export default Announcement;
+export default Announcement

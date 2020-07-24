@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import config from '../config'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar  } from '@fortawesome/free-solid-svg-icons'
 
 
-import './CalendarPage.css';
+import './CalendarPage.css'
 
 class CalendarPage extends Component {
   state = {
@@ -13,7 +13,7 @@ class CalendarPage extends Component {
     userId: 1,
     favs: [],
     display: 'full'
-  };
+  }
 
   componentDidMount() {
 	//clear out any errors in state
@@ -143,7 +143,7 @@ class CalendarPage extends Component {
       hours = hours > 12 ? hours - 12 : hours
 
       var strTime = hours + ':' + minutes + ' ' + ampm
-      return strTime;
+      return strTime
   }
 
   renderCalendar() {
@@ -172,7 +172,7 @@ class CalendarPage extends Component {
 	    events_by_day[d]['events'].push(event)
 	}else{
 	    events_by_day[d] = []
-	    events_by_day[d]['day'] = event.start_date.split('T')[0];
+	    events_by_day[d]['day'] = event.start_date.split('T')[0]
 	    events_by_day[d]['day_ts'] = new Date(event.start_date)
 		events_by_day[d]['events'] = []
 	    events_by_day[d]['events'].push(event)	    
@@ -206,7 +206,7 @@ class CalendarPage extends Component {
 
                         let event_list = filter_events.map((event,i)=>{
 	                   if(this.state.display === 'mine' && !fav_by_id[event.id]){
-        	                return "";
+        	                return ""
                 	   }
 
                             let list_id = day+"_"+i //unique id
@@ -235,7 +235,7 @@ class CalendarPage extends Component {
                                 </blockquote>
 				</div>
                                 {fav_str ? <div className='fav-star fav-star-gold'><FontAwesomeIcon icon={faStar} className='fa-lg' title="fav'd" aria-hidden="true"/></div> : <div className='fav-star fav-star-grey'><FontAwesomeIcon icon={faStar} className='fa-lg' title="fav'd" aria-hidden="true"/></div>}
-                            </div>);
+                            </div>)
                         })
 			
 			let day_ordinal = 'th'
@@ -255,7 +255,7 @@ class CalendarPage extends Component {
                             </div>
                           )
 			}else{
-			  return "";
+			  return ""
 			}
                   })
                 }
@@ -274,9 +274,9 @@ class CalendarPage extends Component {
 	      ? <p>there was an error</p>
 	      : this.renderCalendar()}
         </div>
-    );
+    )
   }
 
 }
 
-export default CalendarPage;
+export default CalendarPage

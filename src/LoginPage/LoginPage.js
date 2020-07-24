@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-import './LoginPage.css';
+import './LoginPage.css'
 
 class LoginPage extends Component {
 
@@ -34,9 +34,9 @@ class LoginPage extends Component {
 	<div className="new-account-link">Don't have an account? <Link to={'/register'}>Sign Up!</Link></div>
       </form>
       </div>
-    );
+    )
   }
 
 }
 
-export default LoginPage;
+export default LoginPage

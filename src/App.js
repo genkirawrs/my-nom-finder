@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import Header from './Header/Header';
-import Nav from './Nav/Nav';
-import Footer from './Footer/Footer';
-import HomePage from './HomePage/HomePage';
-import MenuPage from './MenuPage/MenuPage';
-import CalendarPage from './CalendarPage/CalendarPage';
-import ContactPage from './ContactPage/ContactPage';
-import LoginPage from './LoginPage/LoginPage';
-import RegisterPage from './RegisterPage/RegisterPage';
+import Header from './Header/Header'
+import Nav from './Nav/Nav'
+import Footer from './Footer/Footer'
+import HomePage from './HomePage/HomePage'
+import MenuPage from './MenuPage/MenuPage'
+import CalendarPage from './CalendarPage/CalendarPage'
+import ContactPage from './ContactPage/ContactPage'
+import LoginPage from './LoginPage/LoginPage'
+import RegisterPage from './RegisterPage/RegisterPage'
 
-import './App.css';
+import './App.css'
 
 class App extends Component {
 	
@@ -39,8 +39,8 @@ class App extends Component {
         </main>
 	<Footer/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

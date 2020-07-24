@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import config from '../config'
 
-import './MenuPage.css';
+import './MenuPage.css'
 
 class MenuPage extends Component {
   state = {
     menu: [],
     error: null,
-  };
+  }
 
   componentDidMount() {
         //clear out any errors in state
@@ -62,9 +62,9 @@ class MenuPage extends Component {
   }
 
   decodeHTMLEntities(text) {
-    var textArea = document.createElement('textarea');
-    textArea.innerHTML = text;
-    return textArea.value;
+    var textArea = document.createElement('textarea')
+    textArea.innerHTML = text
+    return textArea.value
   }
 
   renderMenu(){
@@ -116,9 +116,9 @@ class MenuPage extends Component {
 	    <h4>What's on the Menu!</h4>
 		{error ? <p>Sorry, there was an error!</p> : this.renderMenu()}
 	</div>
-    );
+    )
   }
 
 }
 
-export default MenuPage;
+export default MenuPage

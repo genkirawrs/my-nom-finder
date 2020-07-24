@@ -1,36 +1,36 @@
-import React, { Component } from 'react';
-import './ContactPage.css';
+import React, { Component } from 'react'
+import './ContactPage.css'
 
 class ContactPage extends Component {
   constructor(props) {
-    super(props);
-    this.submitForm = this.submitForm.bind(this);
+    super(props)
+    this.submitForm = this.submitForm.bind(this)
     this.state = {
       status: ""
-    };
+    }
   }
 
   submitForm(ev) {
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
+    ev.preventDefault()
+    const form = ev.target
+    const data = new FormData(form)
+    const xhr = new XMLHttpRequest()
+    xhr.open(form.method, form.action)
+    xhr.setRequestHeader("Accept", "application/json")
     xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.readyState !== XMLHttpRequest.DONE) return
       if (xhr.status === 200) {
-        form.reset();
-        this.setState({ status: "SUCCESS" });
+        form.reset()
+        this.setState({ status: "SUCCESS" })
       } else {
-        this.setState({ status: "ERROR" });
+        this.setState({ status: "ERROR" })
       }
-    };
-    xhr.send(data);
+    }
+    xhr.send(data)
   }
 
   render(){ 
-    const { status } = this.state;
+    const { status } = this.state
 
     return(
         <div className="contact-page">
@@ -80,9 +80,9 @@ class ContactPage extends Component {
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
         </div>
-    );
+    )
   }
 
 }
 
-export default ContactPage;
+export default ContactPage
