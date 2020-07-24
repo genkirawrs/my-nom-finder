@@ -9,7 +9,6 @@ import MenuPage from './MenuPage/MenuPage'
 import CalendarPage from './CalendarPage/CalendarPage'
 import ContactPage from './ContactPage/ContactPage'
 import LoginPage from './LoginPage/LoginPage'
-import RegisterPage from './RegisterPage/RegisterPage'
 
 import './App.css'
 
@@ -32,9 +31,6 @@ class App extends Component {
 
                 <Route key='contact' path='/contact' component={ContactPage}/>
 
-                <Route key='login' path='/login' component={LoginPage}/>
-
-		<Route key='register' path='/register' component={RegisterPage}/>
               </Switch>
         </main>
 	<Footer/>
