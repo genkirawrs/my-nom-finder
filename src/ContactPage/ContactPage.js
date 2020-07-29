@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './ContactPage.css'
+import React, { Component } from 'react';
+import './ContactPage.css';
 
 class ContactPage extends Component {
   constructor(props) {

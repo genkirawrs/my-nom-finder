@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import config from '../config'
+import React, { Component } from 'react';
+import config from '../config';
 
-import './MenuPage.css'
+import './MenuPage.css';
 
 class MenuPage extends Component {
   state = {

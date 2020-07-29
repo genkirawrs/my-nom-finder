@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import config from '../config'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar  } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from 'react';
+import config from '../config';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar  } from '@fortawesome/free-solid-svg-icons';
 
 
-import './CalendarPage.css'
+import './CalendarPage.css';
 
 class CalendarPage extends Component {
   state = {

@@ -44,3 +44,7 @@ label {
 	margin-left:5px;
 	padding-bottom:3px;
 }
+
+blockquote, p {
+        text-align:justify;
+}

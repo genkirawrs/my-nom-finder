@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare,  faInstagramSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare,  faInstagramSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
-import './Footer.css'
+import './Footer.css';
 
 
 export default class Footer extends Component {
